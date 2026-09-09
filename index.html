@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brand Atelier — Strategic brand positioning for companies ready to lead. We help brands become distinctive, desirable, and worth choosing.">
+  <meta name="keywords" content="Brand positioning, brand strategy, luxury branding, Brand Atelier, market positioning, executive brand consulting">
+  <meta name="author" content="Brand Atelier">
+  <meta property="og:title" content="Brand Atelier — Brands. Positioned to Lead.">
+  <meta property="og:description" content="We don't just build brands. We build perception. Brand positioning consultancy operating across Singapore and India.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.png">
+  <meta name="theme-color" content="#0A0B0C">
+
+  <title>Brand Atelier — Brands. Positioned to Lead.</title>
+
+  <!-- Google Fonts: Bodoni Moda (High-contrast Serif) & Jost (Geometric Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230A0B0C'/%3E%3Ctext y='70' x='50' text-anchor='middle' font-size='60' font-family='serif' fill='%23F2F0EC'%3EAB%3C/text%3E%3C/svg%3E">
+
+  <!-- Primary Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Brand Atelier",
+    "url": "https://brandatelier.co",
+    "logo": "assets/logo.png",
+    "slogan": "Brands. Positioned to Lead.",
+    "description": "Strategic brand positioning consultancy helping businesses become distinctive, desirable, and worth choosing.",
+    "founders": [
+      {
+        "@type": "Person",
+        "name": "Dhivya Rajendran",
+        "jobTitle": "Founder"
+      },
+      {
+        "@type": "Person",
+        "name": "Meenakshi Vaithinathan",
+        "jobTitle": "Co-Founder"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Ambient Cursor Spotlight (Desktop only) -->
+  <div class="ambient-spotlight" id="ambient-spotlight" aria-hidden="true"></div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-lockup" aria-label="Brand Atelier — Home">
+        <span class="monogram-mark">AB</span>
+        <span class="brand-name">BRAND ATELIER</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#proposition" class="nav-link">The Premise</a></li>
+          <li><a href="#positioning" class="nav-link">Positioning</a></li>
+          <li><a href="#offer" class="nav-link">The Offer</a></li>
+          <li><a href="#global" class="nav-link">Cross-Border</a></li>
+          <li><a href="#founders" class="nav-link">Founders</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <span class="studio-status" title="Singapore & India Offices">
+          <span class="status-pulse" aria-hidden="true"></span>
+          SG &middot; IN
+        </span>
+        <a href="#contact" class="btn-inquire">Initiate Dialogue</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <a href="#proposition" class="mobile-link">The Premise</a>
+        <a href="#positioning" class="mobile-link">Positioning</a>
+        <a href="#offer" class="mobile-link">The Offer</a>
+        <a href="#global" class="mobile-link">Cross-Border</a>
+        <a href="#founders" class="mobile-link">Founders</a>
+        <a href="#contact" class="mobile-link mobile-cta">Initiate Dialogue &rarr;</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =================================================================
+         S1: HERO — "The Crowded Market Resolves"
+         ================================================================= -->
+    <section class="section-hero" id="hero" aria-labelledby="hero-title">
+      <!-- WebGL / 2D Canvas Interactive Particle Field -->
+      <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true" role="presentation"></canvas>
+      
+      <div class="hero-vignette" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="eyebrow hero-eyebrow fade-target">
+            <span class="eyebrow-line" aria-hidden="true"></span>
+            <span>DISCOVER YOUR POSITION</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            <span class="mask-line"><span class="reveal-text">Brands.</span></span>
+            <span class="mask-line"><span class="reveal-text font-italic">Positioned to Lead.</span></span>
+          </h1>
+
+          <p class="hero-subhead fade-target">
+            We help brands become distinctive, desirable, and worth choosing.
+          </p>
+
+          <div class="hero-actions fade-target">
+            <a href="#proposition" class="btn-hero-explore">
+              <span>Explore The Atelier</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M8 3v10M8 13l4-4M8 13L4 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <div class="hero-meta">
+              <span class="meta-label">DISCIPLINE</span>
+              <span class="meta-value">Pure Brand Positioning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-footer-bar fade-target">
+          <div class="hero-coords">
+            <span>SG 1.3521&deg; N &middot; IN 18.9220&deg; N</span>
+            <span class="coord-divider" aria-hidden="true">/</span>
+            <span class="market-indicator">THE RESOLVED LEADER</span>
+          </div>
+
+          <div class="hero-scroll-cue">
+            <span class="cue-label">SCROLL TO RESOLVE</span>
+            <div class="cue-bar" aria-hidden="true">
+              <div class="cue-pill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         S2: THE PROPOSITION — "We Build Perception"
+         ================================================================= -->
+    <section class="section-proposition" id="proposition" aria-labelledby="proposition-title">
+      <div class="container">
+        <div class="section-header-eyebrow reveal-on-scroll">
+          <span class="eyebrow-index">01</span>
+          <span class="eyebrow-text">THE PREMISE</span>
+        </div>
+
+        <div class="proposition-statement reveal-on-scroll">
+          <h2 id="proposition-title" class="display-statement">
+            &ldquo;We don&rsquo;t just build brands.<br class="d-none d-md-block">
+            <span class="emphasis-serif">We build perception.&rdquo;</span>
+          </h2>
+        </div>
+
+        <div class="hairline-divider reveal-line" aria-hidden="true"></div>
+
+        <div class="proposition-grid">
+          <div class="grid-col narrative-primary reveal-on-scroll">
+            <p class="lead-text">
+              At <strong>The Brand Atelier</strong>, we believe a brand is more than a logo, a color palette, or a beautiful identity.
+            </p>
+            <p class="body-text text-highlight">
+              It is the perception, emotion, and value people associate with your business.
+            </p>
+            <p class="body-text">
+              We bring together strategy, creativity, storytelling, and design to transform businesses into brands that are distinctive, meaningful, and built to last.
+            </p>
+          </div>
+
+          <div class="grid-col narrative-secondary reveal-on-scroll">
+            <p class="body-text">
+              We begin with understanding what makes you different&mdash;then turn that essence into a clear positioning and a compelling brand experience.
+            </p>
+
+            <blockquote class="atelier-quote">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <p class="quote-text">
+                Because premium isn&rsquo;t simply about looking expensive.
+                <span class="quote-strong">It&rsquo;s about being perceived as valuable.</span>
+              </p>
+            </blockquote>
+
+            <p class="body-text cadence-text">
+              We don&rsquo;t make your brand louder or trendier.<br>
+              <strong>We make it more intentional, more memorable, and unmistakably yours.</strong>
+            </p>
+          </div>
+        </div>
+
+        <!-- Proposition Anchor Banner -->
+        <div class="atelier-tagline-strip reveal-on-scroll">
+          <span class="tagline-dot" aria-hidden="true"></span>
+          <p class="tagline-copy">The Brand Atelier &mdash; Where businesses become brands people remember.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         S3: WHAT IS BRAND POSITIONING — The Strategic Groundwork
+         ================================================================= -->
+    <section class="section-positioning" id="positioning" aria-labelledby="positioning-title">
+      <div class="container">
+        <div class="section-header-eyebrow reveal-on-scroll">
+          <span class="eyebrow-index">02</span>
+          <span class="eyebrow-text">THE FOUNDATION</span>
+        </div>
+
+        <div class="positioning-hero-block reveal-on-scroll">
+          <h2 id="positioning-title" class="section-heading">
+            What Is Brand Positioning?
+          </h2>
+          <p class="positioning-lead">
+            Brand positioning is the space your brand owns in the mind of your customer. It defines <em>who you are</em>, <em>who you serve</em>, <em>what makes you different</em>, and why your audience should choose you over the alternatives.
+          </p>
+        </div>
+
+        <div class="why-it-matters-card reveal-on-scroll">
+          <div class="card-inner">
+            <span class="badge-eyebrow">WHY DOES IT MATTER?</span>
+            <h3 class="card-statement">
+              Because great businesses can get lost when their value isn&rsquo;t clearly communicated.
+            </h3>
+            <p class="card-clarifier">
+              Without strategic positioning, marketing becomes louder rather than more effective. Distinction creates gravity.
+            </p>
+          </div>
+        </div>
+
+        <div class="pillars-header reveal-on-scroll">
+          <span class="pillars-eyebrow">STRONG POSITIONING EMPOWERS YOU TO:</span>
+        </div>
+
+        <!-- 5 Strategic Pillars Grid -->
+        <div class="pillars-grid">
+          <article class="pillar-card reveal-on-scroll" data-step="01">
+            <div class="pillar-top">
+              <span class="pillar-num">01</span>
+              <span class="pillar-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="pillar-title">Stand apart in a crowded market.</h3>
+            <p class="pillar-desc">
+              When everyone looks similar, choice becomes arbitrary. We establish an incontrovertible point of difference that removes you from commoditized comparison.
+            </p>
+            <div class="pillar-edge-glow" aria-hidden="true"></div>
+          </article>
+
+          <article class="pillar-card reveal-on-scroll" data-step="02">
+            <div class="pillar-top">
+              <span class="pillar-num">02</span>
+              <span class="pillar-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="pillar-title">Attract the right audience instead of everyone.</h3>
+            <p class="pillar-desc">
+              Precision beats volume. We define your ideal audience with forensic clarity so your message resonates deeply with the buyers who matter most.
+            </p>
+            <div class="pillar-edge-glow" aria-hidden="true"></div>
+          </article>
+
+          <article class="pillar-card reveal-on-scroll" data-step="03">
+            <div class="pillar-top">
+              <span class="pillar-num">03</span>
+              <span class="pillar-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="pillar-title">Build perceived value &amp; justify premium pricing.</h3>
+            <p class="pillar-desc">
+              Value is not cost-plus; value is psychological. We elevate your brand narrative to command high fees with effortless client conviction.
+            </p>
+            <div class="pillar-edge-glow" aria-hidden="true"></div>
+          </article>
+
+          <article class="pillar-card reveal-on-scroll" data-step="04">
+            <div class="pillar-top">
+              <span class="pillar-num">04</span>
+              <span class="pillar-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="pillar-title">Create consistency across every touchpoint.</h3>
+            <p class="pillar-desc">
+              From executive messaging to visual identity and customer experience, every signal reinforces the exact same authoritative truth.
+            </p>
+            <div class="pillar-edge-glow" aria-hidden="true"></div>
+          </article>
+
+          <article class="pillar-card pillar-card-featured reveal-on-scroll" data-step="05">
+            <div class="pillar-top">
+              <span class="pillar-num">05</span>
+              <span class="pillar-dot" aria-hidden="true"></span>
+            </div>
+            <h3 class="pillar-title">Become memorable for something specific and meaningful.</h3>
+            <p class="pillar-desc">
+              Generalists fade; singular brands endure. We carve out an indelible mental real-estate that clients recall unprompted when the need arises.
+            </p>
+            <div class="pillar-edge-glow" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         S4: THE OFFER — 01 Uncover · 02 Position · 03 Connect & Grow
+         Home of the Centered Chess Image
+         ================================================================= -->
+    <section class="section-offer" id="offer" aria-labelledby="offer-title">
+      <div class="container">
+        <div class="section-header-eyebrow reveal-on-scroll">
+          <span class="eyebrow-index">03</span>
+          <span class="eyebrow-text">WHAT DO WE OFFER?</span>
+        </div>
+
+        <div class="offer-heading-block reveal-on-scroll">
+          <h2 id="offer-title" class="section-heading">
+            The Strategic Discipline
+          </h2>
+          <p class="section-lead">
+            A three-phase positioning protocol engineered to turn business ambiguity into market leadership.
+          </p>
+        </div>
+
+        <!-- Center Chess Showcase -->
+        <div class="chess-showcase reveal-on-scroll" id="chess-tilt-container">
+          <div class="chess-frame">
+            <img 
+              src="assets/chess.png" 
+              alt="Golden King chess piece commanding the board in raking spotlight among black pawns, symbolizing strategic market positioning"
+              class="chess-img"
+              id="chess-img"
+              loading="lazy"
+            >
+            <div class="chess-vignette" aria-hidden="true"></div>
+            <div class="chess-overlay-caption">
+              <span class="caption-eyebrow">THE METAPHOR OF POSITION</span>
+              <h3 class="caption-title">Positioning Creates Preference.</h3>
+              <p class="caption-sub">One piece commanding the board while the rest compete on the perimeter.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- The 3 Pillars of The Offer -->
+        <div class="offer-cards-grid">
+          
+          <!-- Offer 01 -->
+          <div class="offer-card reveal-on-scroll">
+            <div class="offer-line-draw reveal-line" aria-hidden="true"></div>
+            <div class="offer-card-body">
+              <div class="offer-meta">
+                <span class="offer-num">01</span>
+                <span class="offer-tag">DISCOVERY & AUDIT</span>
+              </div>
+              <h3 class="offer-title">UNCOVER</h3>
+              <p class="offer-statement">
+                We look beyond the surface to understand your brand, identify gaps, and uncover untapped potential.
+              </p>
+              <ul class="offer-vectors">
+                <li><span class="vector-bullet">&mdash;</span> Market landscape &amp; competitive whitespace analysis</li>
+                <li><span class="vector-bullet">&mdash;</span> Customer perceptual gap identification</li>
+                <li><span class="vector-bullet">&mdash;</span> Founder conviction &amp; authentic core extraction</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Offer 02 -->
+          <div class="offer-card reveal-on-scroll">
+            <div class="offer-line-draw reveal-line" aria-hidden="true"></div>
+            <div class="offer-card-body">
+              <div class="offer-meta">
+                <span class="offer-num">02</span>
+                <span class="offer-tag">CORE STRATEGY</span>
+              </div>
+              <h3 class="offer-title">POSITION</h3>
+              <p class="offer-statement">
+                We turn those insights into a clear, distinctive, and premium brand position that sets you apart.
+              </p>
+              <ul class="offer-vectors">
+                <li><span class="vector-bullet">&mdash;</span> Defensible brand thesis &amp; singular value proposition</li>
+                <li><span class="vector-bullet">&mdash;</span> Premium narrative framework &amp; tone architecture</li>
+                <li><span class="vector-bullet">&mdash;</span> Positioning statement &amp; perceptual anchor</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Offer 03 -->
+          <div class="offer-card reveal-on-scroll">
+            <div class="offer-line-draw reveal-line" aria-hidden="true"></div>
+            <div class="offer-card-body">
+              <div class="offer-meta">
+                <span class="offer-num">03</span>
+                <span class="offer-tag">EXECUTION & EXPANSION</span>
+              </div>
+              <h3 class="offer-title">CONNECT &amp; GROW</h3>
+              <p class="offer-statement">
+                We define how your brand can connect with the right audience and create meaningful, lasting growth.
+              </p>
+              <ul class="offer-vectors">
+                <li><span class="vector-bullet">&mdash;</span> Go-to-market translation &amp; messaging playbook</li>
+                <li><span class="vector-bullet">&mdash;</span> Brand touchpoint consistency &amp; governance</li>
+                <li><span class="vector-bullet">&mdash;</span> Long-term enterprise brand equity roadmap</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Strategic Report Callout -->
+        <div class="offer-consultation-banner reveal-on-scroll">
+          <div class="consultation-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <p class="consultation-text">
+            <em>Every insight is backed by a strategic report and a dedicated consultation to turn clarity into action.</em>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         S5: CROSS-BORDER PRACTICE — Singapore to India
+         ================================================================= -->
+    <section class="section-global" id="global" aria-labelledby="global-title">
+      <div class="container">
+        <div class="section-header-eyebrow reveal-on-scroll">
+          <span class="eyebrow-index">04</span>
+          <span class="eyebrow-text">CROSS-BORDER EXPANSION</span>
+        </div>
+
+        <div class="global-layout">
+          <div class="global-narrative reveal-on-scroll">
+            <h2 id="global-title" class="section-heading">
+              New Markets.<br>
+              <span class="font-italic">Bigger Opportunities.</span>
+            </h2>
+            <p class="global-lead">
+              We position global brands for meaningful and successful entry into India.
+            </p>
+            <p class="global-body">
+              Entering one of the world&rsquo;s most dynamic and nuanced consumer landscapes demands more than translation&mdash;it requires profound cultural calibration. We preserve your global pedigree while ensuring undeniable local relevance.
+            </p>
+
+            <div class="route-display">
+              <div class="route-node">
+                <span class="node-city">SINGAPORE</span>
+                <span class="node-role">Global Excellence &amp; Capital</span>
+              </div>
+              <div class="route-vector" aria-hidden="true">
+                <span class="vector-line"></span>
+                <span class="vector-arrow">&rarr;</span>
+              </div>
+              <div class="route-node">
+                <span class="node-city">INDIA</span>
+                <span class="node-role">Vast Scale &amp; Deep Nuance</span>
+              </div>
+            </div>
+
+            <div class="global-principles">
+              <div class="principle-item">
+                <span class="principle-title">Same Excellence.</span>
+                <span class="principle-desc">Maintaining pristine international brand standards without compromise.</span>
+              </div>
+              <div class="principle-item">
+                <span class="principle-title">A Stronger Relevance.</span>
+                <span class="principle-desc">Unlocking native consumer trust through acute demographic insights.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="global-visual reveal-on-scroll">
+            <div class="global-card">
+              <div class="global-card-bg"></div>
+              <div class="global-card-content">
+                <span class="badge-eyebrow">THE BRIDGE</span>
+                <h3 class="bridge-title">Deep Insights.<br>Real Impact.<br><span class="font-italic">Brands for Real People.</span></h3>
+                <div class="bridge-stats">
+                  <div class="b-stat">
+                    <span class="b-num">2</span>
+                    <span class="b-label">Anchor Hubs</span>
+                  </div>
+                  <div class="b-divider" aria-hidden="true"></div>
+                  <div class="b-stat">
+                    <span class="b-num">100%</span>
+                    <span class="b-label">Strategic Focus</span>
+                  </div>
+                  <div class="b-divider" aria-hidden="true"></div>
+                  <div class="b-stat">
+                    <span class="b-num">&infin;</span>
+                    <span class="b-label">Market Upside</span>
+                  </div>
+                </div>
+                <div class="bridge-tagline">
+                  <span>From market entry to category leadership</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         S6: THE FOUNDERS — Dhivya Rajendran & Meenakshi Vaithinathan
+         ================================================================= -->
+    <section class="section-founders" id="founders" aria-labelledby="founders-title">
+      <div class="container">
+        <div class="section-header-eyebrow reveal-on-scroll">
+          <span class="eyebrow-index">05</span>
+          <span class="eyebrow-text">LEADERSHIP</span>
+        </div>
+
+        <div class="founders-heading-block reveal-on-scroll">
+          <h2 id="founders-title" class="section-heading">
+            The Minds Behind the Atelier
+          </h2>
+          <p class="section-lead">
+            Personal conviction, multidisciplinary mastery, and high-level strategy at the helm of every positioning engagement.
+          </p>
+        </div>
+
+        <div class="founders-grid">
+          
+          <!-- Founder 1: Dhivya Rajendran -->
+          <article class="founder-card reveal-on-scroll">
+            <div class="founder-portrait-frame">
+              <img 
+                src="assets/dhivya.jpeg" 
+                alt="Portrait of Dhivya Rajendran, Founder of Brand Atelier" 
+                class="founder-img"
+                loading="lazy"
+              >
+              <div class="founder-portrait-shadow" aria-hidden="true"></div>
+            </div>
+
+            <div class="founder-content">
+              <div class="founder-meta">
+                <h3 class="founder-name">Dhivya Rajendran</h3>
+                <span class="founder-role">FOUNDER</span>
+              </div>
+
+              <div class="hairline-divider" aria-hidden="true"></div>
+
+              <p class="founder-intro">
+                A founder, a mother, and a classical dancer &mdash; passionate about the power of identity.
+              </p>
+
+              <p class="founder-bio">
+                From technology to entrepreneurship, I&rsquo;ve built businesses, communities and brands along the way. My years as a dancer taught me the importance of expression, presence and identity &mdash; lessons I now bring into brand positioning.
+              </p>
+
+              <p class="founder-bio">
+                At <strong>The Brand Atelier</strong>, I help founders discover what makes them different and turn it into a position that gets remembered.
+              </p>
+
+              <blockquote class="founder-quote">
+                &ldquo;Because identity is what makes a brand unforgettable.&rdquo;
+              </blockquote>
+            </div>
+          </article>
+
+          <!-- Founder 2: Meenakshi Vaithinathan -->
+          <article class="founder-card reveal-on-scroll">
+            <div class="founder-portrait-frame">
+              <img 
+                src="assets/meenakshi.jpeg" 
+                alt="Portrait of Meenakshi Vaithinathan, Co-Founder of Brand Atelier" 
+                class="founder-img"
+                loading="lazy"
+              >
+              <div class="founder-portrait-shadow" aria-hidden="true"></div>
+            </div>
+
+            <div class="founder-content">
+              <div class="founder-meta">
+                <h3 class="founder-name">Meenakshi Vaithinathan</h3>
+                <span class="founder-role">CO-FOUNDER</span>
+              </div>
+
+              <div class="hairline-divider" aria-hidden="true"></div>
+
+              <p class="founder-intro">
+                A designer at heart and an entrepreneur by instinct.
+              </p>
+
+              <p class="founder-bio">
+                Meenakshi&rsquo;s journey has moved through fashion, sustainability, travel, and brand building &mdash; each chapter shaping the way she sees businesses and people. Years of exploring new places, meeting different cultures, and building ventures taught her to look beyond the obvious and find the story, character, and potential within every idea.
+              </p>
+
+              <p class="founder-bio">
+                Today, through <strong>The Brand Atelier</strong>, she brings that perspective into brand strategy &mdash; helping businesses discover what makes them unique, position themselves with clarity, and create brands that are distinctive, valuable, and remembered.
+              </p>
+
+              <blockquote class="founder-quote">
+                &ldquo;She believes every brand has a story. The real art is knowing how to tell it.&rdquo;
+              </blockquote>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =================================================================
+         S7: THE CLOSE & PRIVATE INQUIRY
+         ================================================================= -->
+    <section class="section-close" id="contact" aria-labelledby="close-title">
+      <div class="container">
+        <!-- The Focal Resting Dot (Closing Rhyme with Hero Resolve) -->
+        <div class="resolved-focal-dot" aria-hidden="true">
+          <div class="dot-core"></div>
+          <div class="dot-halo"></div>
+        </div>
+
+        <div class="close-content reveal-on-scroll">
+          <span class="close-eyebrow">WHERE PERCEPTION BECOMES REALITY</span>
+          <h2 id="close-title" class="close-statement">
+            Where businesses become brands<br>
+            <span class="emphasis-serif">people remember.</span>
+          </h2>
+          
+          <p class="close-desc">
+            We partner with a disciplined, select cohort of ambitious enterprises each quarter. All engagements are led directly by the founders.
+          </p>
+
+          <div class="inquiry-box">
+            <a href="mailto:hello@brandatelier.co?subject=Positioning%20Inquiry%20%E2%80%94%20Brand%20Atelier" class="inquiry-email-link" id="inquiry-link">
+              <span class="email-text">hello@brandatelier.co</span>
+              <span class="email-underline" aria-hidden="true"></span>
+            </a>
+            <span class="inquiry-note">Direct principal response within 24 hours</span>
+          </div>
+
+          <div class="brand-full-logo-display">
+            <img 
+              src="assets/logo.png" 
+              alt="Brand Atelier &mdash; Brands. Positioned to Lead." 
+              class="footer-logo-img"
+              loading="lazy"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-monogram">AB</span>
+        <div class="footer-meta-block">
+          <span class="footer-brand">BRAND ATELIER</span>
+          <span class="footer-tagline">BRANDS. POSITIONED TO LEAD.</span>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <span class="footer-locations">SINGAPORE &middot; MUMBAI &middot; GLOBAL</span>
+        <span class="footer-copyright">&copy; 2026 Brand Atelier. All rights reserved.</span>
+      </div>
+
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top" aria-label="Return to top of page">
+          <span>TOP</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M6 10V2M6 2L2 6M6 2L10 6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>
